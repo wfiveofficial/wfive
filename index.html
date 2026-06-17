@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W5 Official</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.9);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid #222;
+}
+
+nav h2{
+color:#ff0000;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.logo{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid #ff0000;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:80px;
+color:#ff0000;
+}
+
+.hero p{
+letter-spacing:3px;
+color:#ccc;
+}
+
+section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#ff0000;
+}
+
+.about{
+text-align:center;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1b1b1b;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.price{
+color:#ff0000;
+font-weight:bold;
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
+}
+
+.payment{
+text-align:center;
+line-height:2;
+}
+
+.social{
+text-align:center;
+line-height:2;
+}
+
+footer{
+background:#000;
+padding:40px 20px;
+text-align:center;
+border-top:1px solid #222;
+}
+
+footer h3{
+color:#ff0000;
+margin-bottom:10px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:55px;
+}
+
+nav{
+padding:15px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>W5</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#produk">Produk</a></li>
+<li><a href="#payment">Pembayaran</a></li>
+<li><a href="#social">Sosial Media</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<img src="assets/logo.jpeg" alt="Logo W5" class="logo">
+
+<h1>W5</h1>
+
+<p>LIVE LOUD. STAY TRUE.</p>
+
+</section>
+
+<section id="about">
+
+<h2>About W5</h2>
+
+<p class="about">
+W5 adalah brand streetwear independen yang terinspirasi oleh kultur rock,
+musik, seni, dan kebebasan berekspresi.
+Kami percaya bahwa pakaian bukan hanya fashion,
+tetapi juga identitas dan cara menyampaikan karakter diri.
+</p>
+
+</section>
+
+<section id="produk">
+
+<h2>Our Collection</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="assets/kaos1.jpeg" alt="W5 Black Tee">
+
+<div class="card-content">
+
+<h3>W5 Boxy Tee Black</h3>
+
+<p class="price">Rp99.900</p>
+
+<a href="https://wa.me/6285143006891" class="btn">
+Order Sekarang
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="assets/kaos2.jpeg" alt="W5 White Tee">
+
+<div class="card-content">
+
+<h3>W5 Boxy Tee White</h3>
+
+<p class="price">Rp99.900</p>
+
+<a href="https://wa.me/6285143006891" class="btn">
+Order Sekarang
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="payment">
+
+<h2>Metode Pembayaran</h2>
+
+<div class="payment">
+
+<p>🏦 Transfer Bank (BCA, BRI, BNI, Mandiri)</p>
+
+<p>📱 DANA</p>
+
+<p>📱 OVO</p>
+
+<p>📱 GoPay</p>
+
+<p>📱 ShopeePay</p>
+
+<p>📷 QRIS (Semua E-Wallet & Mobile Banking)</p>
+
+</div>
+
+</section>
+
+<section id="social">
+
+<h2>Media Sosial</h2>
+
+<div class="social">
+
+<p>📸 Instagram : @wfive_official</p>
+
+<p>🎵 TikTok : @wfive_0fficial</p>
+
+<p>💬 WhatsApp : +62 851-4300-6891</p>
+
+<br>
+
+<a href="https://instagram.com/wfive_official" class="btn">
+Instagram
+</a>
+
+<a href="https://tiktok.com/@wfive_0fficial" class="btn">
+TikTok
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Wfive official</h3>
+
+<p>LIVE LOUD. STAY TRUE.</p>
+
+<br>
+
+<p>
+Streetwear • Rock Culture • Independent Brand
+</p>
+
+<br>
+
+<p>
+© 2026 Wfive Official. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/6285143006891" class="whatsapp">
+WhatsApp
+</a>
+
+</body>
+</html>
